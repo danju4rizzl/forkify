@@ -9,7 +9,6 @@ export const clearInput = () => {
 export const clearResults = () => {
   elements.searchReasultList.innerHTML = "";
 };
-// Rice and egg
 
 const limitRecipeTitle = (title, limit = 17) => {
   const newTitle = [];
