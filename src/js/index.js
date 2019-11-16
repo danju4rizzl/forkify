@@ -1,4 +1,5 @@
 import Search from "./models/Search";
+import Recipe from "./models/Recipe";
 import * as searchView from "./views/searchView";
 import { elements, renderLoader, clearLoader } from "./views/base";
 import config from "./config";
@@ -12,6 +13,9 @@ import config from "./config";
 
 const state = {};
 
+/*
+*SEARCH CONTROLLER
+*/
 const controlSearch = async () => {
   const query = searchView.getInput();
   if (query) {
@@ -42,3 +46,15 @@ elements.searchResPages.addEventListener("click", e => {
     console.log(goToPage);
   }
 });
+
+
+/*
+*RECIPE CONTROLLER
+*/
+
+const r = new Recipe(46956)
+
+r.getRecipe()
+
+console.log(r)
+
